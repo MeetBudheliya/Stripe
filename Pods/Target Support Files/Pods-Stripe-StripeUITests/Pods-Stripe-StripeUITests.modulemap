@@ -1,0 +1,6 @@
+framework module Pods_Stripe_StripeUITests {
+  umbrella header "Pods-Stripe-StripeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
