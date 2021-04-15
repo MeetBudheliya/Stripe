@@ -4,22 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Stripe-StripeUITests.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Stripe.xcscheme</key>
+		<key>Pods-StripePay-StripePayUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-StripeTests.xcscheme</key>
+		<key>Pods-StripePay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PreLoader.xcscheme</key>
+		<key>Pods-StripePayTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

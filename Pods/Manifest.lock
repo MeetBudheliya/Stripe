@@ -1,22 +1,22 @@
 PODS:
-  - PreLoader (0.5.1)
+  - Alamofire (5.4.2)
   - Stripe (21.4.0):
     - Stripe/Stripe3DS2 (= 21.4.0)
   - Stripe/Stripe3DS2 (21.4.0)
 
 DEPENDENCIES:
-  - PreLoader (~> 0.5.1)
+  - Alamofire
   - Stripe
 
 SPEC REPOS:
   trunk:
-    - PreLoader
+    - Alamofire
     - Stripe
 
 SPEC CHECKSUMS:
-  PreLoader: 732c6b83fae9615a9933270475895e2c5ed994ae
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
   Stripe: 7c594b943abb65cf7bc28e37fd5124e65db3ce9e
 
-PODFILE CHECKSUM: 4fe01a6176bc08ab35682d654b95a9f0949007f9
+PODFILE CHECKSUM: 7295fc32420e9834eb7a8d3f9ed0521e82b27f89
 
 COCOAPODS: 1.10.1

@@ -1,20 +1,22 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Stripe' do
+target 'StripePay' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
- pod 'PreLoader', '~> 0.5.1'
-pod 'Stripe'
+  # Pods for StripePay
 
-  target 'StripeTests' do
+	pod 'Stripe'
+	pod 'Alamofire'
+
+  target 'StripePayTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'StripeUITests' do
-   
+  target 'StripePayUITests' do
+    # Pods for testing
   end
 
 end

