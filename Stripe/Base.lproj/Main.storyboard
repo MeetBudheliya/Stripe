@@ -359,10 +359,10 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yK4-zD-dJa">
-                                <rect key="frame" x="41.5" y="278" width="331" height="100"/>
+                                <rect key="frame" x="41.5" y="268" width="331" height="110"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="in7-fH-Qdb"/>
+                                    <constraint firstAttribute="height" constant="110" id="in7-fH-Qdb"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="15"/>

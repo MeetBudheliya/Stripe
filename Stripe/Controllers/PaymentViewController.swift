@@ -7,6 +7,8 @@
 
 import UIKit
 import Stripe
+import PassKit
+
 class PaymentViewController: UIViewController {
 
     var customerContext:STPCustomerContext?
@@ -18,8 +20,12 @@ class PaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Make Complete Payment"
+        LatestCustomerId = UserDefaults.standard.string(forKey: "CustId") ?? ""
+        lastCustomerDetail = UserDefaults.standard.string(forKey: "CustDetail") ?? ""
+        self.detail.text = lastCustomerDetail
+        self.detail.isScrollEnabled = false
         
-        let configration = STPPaymentConfiguration()
+        let configration = STPPaymentConfiguration.shared
         configration.shippingType = .shipping
         configration.requiredShippingAddressFields = Set<STPContactField>(arrayLiteral: .name,.emailAddress,.phoneNumber,.postalAddress)
         configration.companyName = "MB Testing"
@@ -73,7 +79,7 @@ class PaymentViewController: UIViewController {
     }
 
     @IBAction func PayNowClicked(_ sender: UIButton) {
-        
+        self.paymentContext?.pushPaymentOptionsViewController()
     }
     
 }
@@ -96,24 +102,62 @@ extension PaymentViewController:STPPaymentContextDelegate{
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didFailToLoadWithError error: Error) {
-        <#code#>
+        print(error.localizedDescription)
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didCreatePaymentResult paymentResult: STPPaymentResult, completion: @escaping STPPaymentStatusBlock) {
-        <#code#>
+        print(paymentResult)
+        MyAPIClient.createPaymentIntent(amount: Double(paymentContext.paymentAmount + Int(paymentContext.selectedShippingMethod!.amount)), currency: "usd", customerId: LatestCustomerId) { (res) in
+            switch res{
+            case .success(let clientSecret):
+                //Assemble The Payment Intent Params
+                let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+                paymentIntentParams.paymentMethodId = paymentResult.paymentMethod?.stripeId
+                paymentIntentParams.paymentMethodParams = paymentResult.paymentMethodParams
+                
+                //Confirm The Payment Intent
+                STPPaymentHandler.shared().confirmPayment(paymentIntentParams, with: paymentContext) { (status, intent, error) in
+                    switch status{
+                    case .succeeded:
+                        completion(.success,nil)
+                    case .failed:
+                        completion(.error,nil)
+                    case .canceled:
+                        completion(.userCancellation,nil)
+                    }
+                }
+            case .failure(let error):
+                completion(.error,error)
+            }
+        }
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didFinishWith status: STPPaymentStatus, error: Error?) {
-        <#code#>
+        print(status)
     }
     
     func paymentContext(_ paymentContext: STPPaymentContext, didUpdateShippingAddress address: STPAddress, completion: @escaping STPShippingMethodsCompletionBlock) {
         isSetShipping = false
-        debugPrint(paymentContext.selectedShippingMethod)
-        debugPrint(paymentContext.shippingAddress)
+        debugPrint(paymentContext.selectedShippingMethod as Any)
+        debugPrint(paymentContext.shippingAddress as Any)
         
-        let upsGround = STPKlarnaPaymentMethods()
-        upsGround
+        let upsGround = PKShippingMethod()
+        upsGround.amount = 0
+        upsGround.label = "UPS Ground"
+        upsGround.detail = "Arrives in 3-5 Working Days"
+        upsGround.identifier = "ups_ground"
+        
+        let fedEx = PKShippingMethod()
+        fedEx.amount = 3.33
+        fedEx.label = "FedEx"
+        fedEx.detail = "Arrives Tommorrow"
+        fedEx.identifier = "fedex"
+        
+        if address.country == "US"{
+            completion(.valid,nil,[],upsGround)
+        }else{
+            completion(.invalid,nil,nil,nil )
+        }
     }
     
 }

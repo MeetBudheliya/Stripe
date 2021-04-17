@@ -7,6 +7,8 @@
 
 import Stripe
 import Alamofire
+import Foundation
+
 var LatestCustomerId = String()
 var lastCustomerDetail = String()
 class MyAPIClient:NSObject,STPCustomerEphemeralKeyProvider{
@@ -33,7 +35,8 @@ class MyAPIClient:NSObject,STPCustomerEphemeralKeyProvider{
                 LatestCustomerId = resultValue!["id"] as! String
                 lastCustomerDetail = "Pay With \nCustomer Id : \(LatestCustomerId) \nName : \(resultValue!["name"] as! String) \nEmail Id : \(resultValue!["email"] as! String) \nMobile Number : \(resultValue!["phone"] as! String)"
                 txtView.text = lastCustomerDetail
-                
+                UserDefaults.standard.set(LatestCustomerId, forKey: "CustId")
+                UserDefaults.standard.set(lastCustomerDetail, forKey: "CustDetail")
                 LoadingOverlay.shared.hideOverlayView()
                 for v in vc.view.subviews {
                     v.isHidden = false
@@ -69,9 +72,9 @@ class MyAPIClient:NSObject,STPCustomerEphemeralKeyProvider{
     }
     
     //Third :- Create Payment Intent
-    class func createPaymentIntent(amount:String,currency:String,customerId:String,completion:@escaping(Result<Any, Error>)->Void){
+    class func createPaymentIntent(amount:Double,currency:String,customerId:String,completion:@escaping ((Result<String,Error>)->Void)){
         
-        let param = ["amount":amount,"currency":currency,"customerId":customerId]
+        let param = ["amount":amount,"currency":currency,"customerId":customerId] as [String : Any]
         guard let reqUrl = URL(string: "http://localhost:8888/StripeBackend/createpaymentintent.php") else {
             print("Invalid URL")
             return
